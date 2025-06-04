@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #102E50;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StoredDataController">
+    <children>
+
+        <TableView fx:id="bmiTable" layoutX="50.0" layoutY="50.0" prefHeight="350.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="bmiColumn" prefWidth="200.0" text="BMI Value" />
+                <TableColumn fx:id="timeColumn" prefWidth="500.0" text="Saved Time" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="backButton" layoutX="50.0" layoutY="420.0" prefHeight="40.0" prefWidth="120.0" text="Back" style="-fx-background-color: #E0FE10; -fx-font-weight: bold;" />
+
+        <Button fx:id="deleteButton" layoutX="180.0" layoutY="420.0" prefHeight="40.0" prefWidth="150.0" text="Delete Selected" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+    </children>
+</AnchorPane>
+

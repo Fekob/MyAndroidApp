@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="591.0" prefWidth="874.0" style="-fx-background-color: #102E50;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpController">
+   <children>
+      <ImageView fitHeight="324.0" fitWidth="321.0" layoutX="35.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/logo2.png" />
+         </image>
+      </ImageView>
+      <Line endX="-84.0" endY="219.80001831054688" layoutX="520.0" layoutY="257.0" startX="-84.0" startY="-156.60000610351562" />
+      <TextField fx:id="nameField" layoutX="529.0" layoutY="170.0" prefHeight="34.0" prefWidth="215.0" promptText="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailField" layoutX="529.0" layoutY="227.0" prefHeight="34.0" prefWidth="215.0" promptText="Enter your email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="529.0" layoutY="287.0" prefHeight="34.0" prefWidth="215.0" promptText="Password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="529.0" layoutY="337.0" prefHeight="34.0" prefWidth="215.0" promptText="Confirm Password" />
+      <Button fx:id="createButton" layoutX="486.0" layoutY="417.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="322.0" style="-fx-background-color: #E0FE10;" text="Create account">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+       <Button fx:id="backButton" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Back" />
+      <Label fx:id="messageLabel" layoutX="495.0" layoutY="509.0" prefHeight="55.0" prefWidth="277.0"  textFill="#d90d0d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
